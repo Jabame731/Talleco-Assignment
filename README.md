@@ -1,30 +1,25 @@
-TallecoAssignment - .NET 8 Razor Pages Application
+# TallecoAssignment - .NET 8 Razor Pages Application
 
-📌 Project Overview
+## 📌 Project Overview
 
-This is a simple web application built using .NET 8 and Razor Pages. It loads data from products.json and orders.json stored in the wwwroot/data folder and displays:
+This is a simple web application built using .NET 8 and Razor Pages. It loads data from `products.json` and `orders.json` stored in the `wwwroot/data` folder and displays:
 
-A Store Page listing products with names and prices
+- A **Store Page** listing products with names and prices
+- A **My Orders Page** displaying order IDs and net prices
+- A **Home Page** with navigation links
 
-A My Orders Page displaying order IDs and net prices.
+## 🛠️ Setup Instructions
 
-A Home Page with navigation links.
-
-🛠️ Setup Instructions
-
-1️⃣ Prerequisites
-
+### 1️⃣ Prerequisites
 Make sure you have the following installed:
+- .NET 8 SDK
+- A code editor like Visual Studio or VS Code
 
-.NET 8 SDK
+### 2️⃣ Clone the Repository
 
-A code editor like Visual Studio or VS Code
+- git clone <repo_url>
+- cd TallecoAssignment
 
-2️⃣ Clone the Repository
+### 3️⃣ Run the Application
 
-git clone <repo_url>
-cd TallecoAssignment
-
-3️⃣ Run the Application
-
-dotnet run
+- dotnet run
