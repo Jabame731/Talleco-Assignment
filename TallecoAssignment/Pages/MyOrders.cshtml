@@ -1,0 +1,30 @@
+﻿@page
+@model TallecoAssignment.Pages.MyOrdersModel
+@{
+    ViewData["Title"] = "My Orders";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">My Orders</h2>
+
+    @if (Model.Orders.Any())
+    {
+        <div class="row">
+            @foreach (var order in Model.Orders)
+            {
+                <div class="col-md-6">
+                    <div class="card shadow-sm mb-4 border-0">
+                        <div class="card-body">
+                            <h5 class="card-title">Order ID: @order.Id</h5>
+                            <p class="card-text text-muted">Total Net Price: <strong class="text-success">$@(order.Items?.Sum(i => i.NetCost) ?? 0)</strong></p>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p class="text-center text-muted">No orders found.</p>
+    }
+</div>

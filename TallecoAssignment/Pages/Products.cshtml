@@ -1,0 +1,27 @@
+﻿@page
+@model TallecoAssignment.Pages.ProductsModel
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="container mt-5">
+    <h2 class="text-center mb-4">Products Lists</h2>
+
+    <div class="row g-4">
+        @foreach (var product in Model.Products)
+        {
+            <div class="col-md-6 col-lg-4">
+                <div class="card shadow-sm p-3 d-flex flex-row align-items-center justify-content-between">
+                    <div>
+                        <h5 class="card-title">@product.ProductName</h5>
+                        <p class="card-text text-muted">$@product.Cost</p>
+  
+                    </div>
+
+                    <img src="@product.ImageUrl" alt="@product.ProductName" class="rounded" style="width: 80px; height: 80px; object-fit: cover;">
+                </div>
+            </div>
+        }
+
+    </div>
+</div>
